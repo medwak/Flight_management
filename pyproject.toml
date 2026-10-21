@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "flight-management"
+version = "1.0.0"
+description = "Flight management and operations system for commercial, business and cargo aircraft"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+flight-management = "flight_management.__main__:main"
+
+[tool.setuptools]
+packages = ["flight_management"]
